@@ -3,6 +3,13 @@
   // Log when script is loaded
   console.log('Common.js loaded');
   
+  // Add Microsoft Clarity Analytics to all pages
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "r5vp3h3mly");
+  
   // Header content
   const headerContent = `
   <header>
@@ -40,7 +47,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
                 <a class="dropdown-item" href="market-overview.html">Market Overview</a>
-                <a class="dropdown-item" href="disposable-guide.html">Guide to Disposables</a>
+                <a class="dropdown-item" href="guide-to-disposables.html">Guide to Disposables</a>
                 <a class="dropdown-item" href="usecases.html">Use Cases</a>
                 <a class="dropdown-item" href="how-to-use.html">How To Use</a>
                 <a class="dropdown-item" href="case-studies.html">Case Studies</a>
@@ -117,7 +124,7 @@
           <h4 class="footer-title">Resource Center</h4>
           <div class="footer-resources">
             <a href="market-overview.html" class="footer-link">Market Overview</a>
-            <a href="disposable-guide.html" class="footer-link">Guide to Disposables</a>
+            <a href="guide-to-disposables.html" class="footer-link">Guide to Disposables</a>
             <a href="usecases.html" class="footer-link">Use Cases</a>
             <a href="how-to-use.html" class="footer-link">How To Use</a>
             <a href="case-studies.html" class="footer-link">Case Studies</a>

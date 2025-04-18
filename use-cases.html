@@ -1,613 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disposable Food Packaging Use Cases | Success Marketing</title>
-    <meta name="description" content="Explore various use cases of disposable food packaging in different food business scenarios across India. Learn how to optimize packaging for your specific needs.">
-    <meta name="keywords" content="disposable packaging use cases, food packaging applications, restaurant packaging solutions, food business packaging, packaging case studies, zomato packaging, swiggy packaging">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://successmarketingkota.com/usecases.html">
+    <meta name="description" content="Explore real-world use cases for disposable food packaging in India, including food delivery, takeaways, cloud kitchens, events and catering solutions.">
+    <meta name="keywords" content="disposable packaging use cases, food delivery packaging India, takeaway containers, cloud kitchen packaging, event catering supplies, disposable food packaging solutions, zomato packaging, swiggy packaging">
+    <link rel="canonical" href="https://successmarketing.in/usecases.html">
+    <title>Use Cases for Disposable Food Packaging | Success Marketing</title>
     
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Disposable Food Packaging Use Cases | Success Marketing">
-    <meta property="og:description" content="Comprehensive guide to using disposable food packaging in various Indian food business scenarios.">
-    <meta property="og:url" content="https://successmarketingkota.com/usecases.html">
-    <meta property="og:type" content="website">
-    
-    <!-- CSS and Libraries -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    
     <style>
+        /* Additional page-specific styles */
         .use-case-card {
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
             background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-            padding: 30px;
-            transition: all 0.3s ease;
+            margin-bottom: 25px;
         }
         
         .use-case-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .use-case-card.highlight {
+            border-left: 5px solid var(--accent-color);
+        }
+        
+        .use-case-header {
+            padding: 20px 25px 10px;
+        }
+        
+        .use-case-body {
+            padding: 0 25px 20px;
         }
         
         .use-case-title {
+            font-size: 22px;
+            font-weight: 700;
             color: var(--primary-color);
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 10px;
-            display: inline-block;
+            margin-bottom: 15px;
         }
         
-        .use-case-section {
-            margin-bottom: 60px;
-            padding-top: 30px;
+        .use-case-description {
+            color: #444;
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
         
         .feature-list {
-            list-style: none;
-            padding: 0;
+            margin-bottom: 25px;
         }
         
         .feature-list li {
             margin-bottom: 12px;
-            padding-left: 30px;
             position: relative;
+            padding-left: 28px;
         }
         
-        .feature-list li i {
+        .feature-list li:before {
+            content: "\f058";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
             position: absolute;
             left: 0;
-            top: 5px;
-            color: var(--secondary-color);
+            color: var(--accent-color);
         }
         
-        .use-case-image {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: var(--box-shadow);
-        }
-        
-        .use-case-quote {
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: var(--border-radius);
-            padding: 20px;
-            margin-top: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            position: relative;
-        }
-        
-        .use-case-quote blockquote {
-            font-style: italic;
-            margin: 0;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-        
-        .use-case-quote cite {
-            display: block;
-            margin-top: 10px;
-            font-weight: 600;
-            color: var(--primary-color);
-            font-size: 0.9rem;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        .stat-item {
-            background: var(--light-gray);
-            border-radius: var(--border-radius);
-            padding: 15px;
+        .impact-stat {
+            display: inline-block;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 6px;
+            padding: 12px 20px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            min-width: 120px;
             text-align: center;
-            transition: var(--transition);
         }
         
-        .stat-item:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--box-shadow);
-            background: rgba(52, 152, 219, 0.1);
-        }
-        
-        .stat-value {
-            font-size: 1.5rem;
+        .impact-stat-value {
+            font-size: 20px;
             font-weight: 700;
-            color: var(--secondary-color);
-            margin-bottom: 5px;
+            color: var(--primary-color);
+            display: block;
         }
         
-        .stat-label {
-            font-size: 0.85rem;
-            color: var(--text-color);
+        .impact-stat-label {
+            font-size: 14px;
+            color: #666;
         }
         
-        .quick-nav-section {
-            margin: 30px 0 40px;
+        .quick-nav {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            position: sticky;
+            top: 100px;
         }
         
-        .quick-nav-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
+        .quick-nav ul {
+            list-style: none;
+            padding-left: 0;
         }
         
-        .use-case-description p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            color: #555;
+        .quick-nav li {
+            margin-bottom: 10px;
         }
         
-        .highlighted-card {
-            border-left: 4px solid var(--secondary-color);
+        .quick-nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: block;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-nav a:hover, .quick-nav a.active {
+            background-color: rgba(var(--primary-color-rgb), 0.1);
+            padding-left: 20px;
+        }
+        
+        .testimonial {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            margin: 25px 0;
+        }
+        
+        .testimonial-author {
+            font-style: normal;
+            font-weight: 600;
+            margin-top: 15px;
+            display: block;
         }
         
         @media (max-width: 768px) {
-            .use-case-title {
-                font-size: 1.5rem;
+            .quick-nav {
+                position: relative;
+                top: 0;
+                margin-bottom: 30px;
             }
             
-            .use-case-card {
-                padding: 20px;
-            }
-            
-            .use-case-image {
-                margin-bottom: 20px;
-            }
-            
-            .stats-grid {
-                grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-            }
-            
-            .use-case-section:nth-child(even) .row {
-                flex-direction: column-reverse;
+            .impact-stat {
+                width: 100%;
+                margin-right: 0;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation placeholder -->
+    <!-- Header Placeholder -->
     <div id="header-placeholder"></div>
     
-    <!-- Page Header -->
-    <section class="resource-header">
-        <div class="header-overlay"></div>
-        <div class="container position-relative">
-            <h1 class="resource-title animate__animated animate__fadeInDown">Disposable Food Packaging Use Cases</h1>
-            <p class="resource-subtitle animate__animated animate__fadeInUp">Comprehensive guide to packaging solutions for Indian food businesses</p>
-        </div>
-    </section>
-    
-    <!-- Quick Navigation -->
-    <section class="quick-nav-section">
+    <!-- Hero Section -->
+    <section class="page-header">
         <div class="container">
-            <div class="quick-nav-buttons">
-                <a href="#delivery" class="btn btn-outline-primary">Food Delivery</a>
-                <a href="#food-apps" class="btn btn-outline-primary">Zomato & Swiggy</a>
-                <a href="#takeaway" class="btn btn-outline-primary">Takeaway</a>
-                <a href="#cloud-kitchen" class="btn btn-outline-primary">Cloud Kitchen</a>
-                <a href="#events" class="btn btn-outline-primary">Events</a>
-                <a href="#office" class="btn btn-outline-primary">Office Catering</a>
-                <a href="#school" class="btn btn-outline-primary">School Meals</a>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Use Cases for Disposable Packaging</h1>
+                    <p class="lead">Discover how different businesses are leveraging disposable food packaging to improve operations, enhance customer experience, and drive growth.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1622467827417-bbe2237067a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Disposable food packaging use cases" class="img-fluid rounded shadow">
+                </div>
             </div>
         </div>
     </section>
     
     <!-- Main Content -->
-    <div class="container">
-        <!-- Food Delivery Section -->
-        <section id="delivery" class="use-case-section">
-            <div class="use-case-card">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="use-case-content">
-                            <h2 class="use-case-title">Food Delivery Services</h2>
-                            <div class="use-case-description">
-                                <p>Optimize your food delivery packaging for maximum customer satisfaction and food quality preservation.</p>
-                            </div>
-                            <div class="use-case-features">
-                                <h3>Key Features</h3>
-                                <ul class="feature-list">
-                                    <li><i class="fas fa-check"></i> Leak-proof containers for liquids</li>
-                                    <li><i class="fas fa-check"></i> Temperature control solutions</li>
-                                    <li><i class="fas fa-check"></i> Secure packaging for fragile items</li>
-                                    <li><i class="fas fa-check"></i> Custom branding opportunities</li>
-                                    <li><i class="fas fa-check"></i> Easy-to-open packaging</li>
-                                </ul>
-                            </div>
-                            <div class="use-case-stats">
-                                <h3>Impact</h3>
-                                <div class="stats-grid">
-                                    <div class="stat-item">
-                                        <div class="stat-value">85%</div>
-                                        <div class="stat-label">Food Quality Retention</div>
-                                    </div>
-                                    <div class="stat-item">
-                                        <div class="stat-value">40%</div>
-                                        <div class="stat-label">Customer Satisfaction</div>
-                                    </div>
-                                    <div class="stat-item">
-                                        <div class="stat-value">30%</div>
-                                        <div class="stat-label">Repeat Orders</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="use-case-image">
-                            <img src="images/delivery-use-case.jpg" alt="Food delivery packaging" class="img-fluid">
-                            <div class="use-case-quote">
-                                <blockquote>
-                                    "Our delivery packaging has helped us maintain food quality and temperature, resulting in better customer reviews."
-                                    <cite>- Restaurant Owner, Mumbai</cite>
-                                </blockquote>
-                            </div>
-                        </div>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar Navigation -->
+                <div class="col-lg-3 mb-4">
+                    <div class="quick-nav">
+                        <h5>Quick Navigation</h5>
+                        <ul>
+                            <li><a href="#food-delivery">Food Delivery</a></li>
+                            <li><a href="#takeaway">Takeaway Service</a></li>
+                            <li><a href="#cloud-kitchen">Cloud Kitchen</a></li>
+                            <li><a href="#zomato-swiggy">Zomato & Swiggy</a></li>
+                            <li><a href="#events">Events & Parties</a></li>
+                            <li><a href="#office-catering">Office Catering</a></li>
+                            <li><a href="#school-meals">School Meals</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <!-- Zomato & Swiggy Section -->
-        <section id="food-apps" class="use-case-section">
-            <div class="use-case-card highlighted-card">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="use-case-image">
-                            <img src="images/food-app-use-case.jpg" alt="Zomato and Swiggy packaging" class="img-fluid">
-                            <div class="use-case-quote">
-                                <blockquote>
-                                    "Partnering with Zomato and Swiggy required us to upgrade our packaging. The investment paid off with higher ratings and more orders."
-                                    <cite>- Restaurant Chain Owner, Delhi NCR</cite>
-                                </blockquote>
+                
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <!-- Food Delivery Section -->
+                    <div id="food-delivery" class="use-case-card">
+                        <div class="use-case-header">
+                            <h2 class="use-case-title">Food Delivery</h2>
+                        </div>
+                        <div class="use-case-body">
+                            <p class="use-case-description">Food delivery services in India require reliable packaging that keeps food hot, prevents leakage, and maintains food quality during transit. Our solutions are specifically designed for the unique challenges of Indian delivery logistics.</p>
+                            
+                            <h5>Key Features:</h5>
+                            <ul class="feature-list">
+                                <li>Leak-proof containers for curries and liquid dishes</li>
+                                <li>Temperature retention for long delivery times</li>
+                                <li>Compartmentalized options for multi-item orders</li>
+                                <li>Tamper-evident seals for food safety</li>
+                                <li>Customizable branding options</li>
+                            </ul>
+                            
+                            <h5>Impact:</h5>
+                            <div class="impact-stats">
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">35%</span>
+                                    <span class="impact-stat-label">Fewer Complaints</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">25min</span>
+                                    <span class="impact-stat-label">Heat Retention</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">98%</span>
+                                    <span class="impact-stat-label">Leak Protection</span>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial">
+                                "After switching to Success Marketing's delivery containers, our customer satisfaction ratings improved significantly. The leak-proof design has been a game-changer for our biryani and curry deliveries."
+                                <span class="testimonial-author">- Rohit S., Cloud Kitchen Owner, Mumbai</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="use-case-content">
+                    
+                    <!-- Takeaway Section -->
+                    <div id="takeaway" class="use-case-card">
+                        <div class="use-case-header">
+                            <h2 class="use-case-title">Takeaway Service</h2>
+                        </div>
+                        <div class="use-case-body">
+                            <p class="use-case-description">For restaurants offering takeaway in India, packaging needs to be quick to assemble, space-efficient for storage, and sturdy enough for customer transport, while representing your brand quality.</p>
+                            
+                            <h5>Key Features:</h5>
+                            <ul class="feature-list">
+                                <li>Easy-assembly designs for quick service</li>
+                                <li>Stackable containers to save counter space</li>
+                                <li>Microwavable options for customer convenience</li>
+                                <li>Eco-friendly alternatives for environmentally conscious brands</li>
+                                <li>Customized printing for brand visibility</li>
+                            </ul>
+                            
+                            <h5>Impact:</h5>
+                            <div class="impact-stats">
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">40%</span>
+                                    <span class="impact-stat-label">Faster Packing</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">22%</span>
+                                    <span class="impact-stat-label">Storage Saved</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">4.2★</span>
+                                    <span class="impact-stat-label">Avg. Rating</span>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial">
+                                "The stackable takeaway containers have transformed our limited kitchen space efficiency. Customers love that they can reheat their food directly in the containers."
+                                <span class="testimonial-author">- Priya M., Restaurant Manager, Bangalore</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cloud Kitchen Section -->
+                    <div id="cloud-kitchen" class="use-case-card">
+                        <div class="use-case-header">
+                            <h2 class="use-case-title">Cloud Kitchen</h2>
+                        </div>
+                        <div class="use-case-body">
+                            <p class="use-case-description">Cloud kitchens in India's competitive food delivery market need packaging that maximizes operational efficiency, ensures food quality during delivery, and strengthens brand recognition without a physical storefront.</p>
+                            
+                            <h5>Key Features:</h5>
+                            <ul class="feature-list">
+                                <li>Cost-effective bulk packaging solutions</li>
+                                <li>Multi-cuisine compatible containers</li>
+                                <li>Space-saving nested storage designs</li>
+                                <li>Custom-branded packaging for virtual brands</li>
+                                <li>QR code enabled packaging for digital menus</li>
+                            </ul>
+                            
+                            <h5>Impact:</h5>
+                            <div class="impact-stats">
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">30%</span>
+                                    <span class="impact-stat-label">Cost Reduction</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">65%</span>
+                                    <span class="impact-stat-label">Brand Recall</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">28%</span>
+                                    <span class="impact-stat-label">Repeat Orders</span>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial">
+                                "Operating three virtual restaurant brands from one kitchen, the customized packaging from Success Marketing helps us maintain distinct brand identities. Our customers recognize our packaging instantly."
+                                <span class="testimonial-author">- Vikram J., Cloud Kitchen Entrepreneur, Chennai</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zomato & Swiggy Partners Section -->
+                    <div id="zomato-swiggy" class="use-case-card highlight">
+                        <div class="use-case-header">
                             <h2 class="use-case-title">Zomato & Swiggy Partners</h2>
-                            <div class="use-case-description">
-                                <p>Specialized packaging solutions for restaurants partnering with food delivery platforms like Zomato and Swiggy to meet platform requirements and improve customer ratings.</p>
-                            </div>
-                            <div class="use-case-features">
-                                <h3>Key Features</h3>
-                                <ul class="feature-list">
-                                    <li><i class="fas fa-check"></i> Tamper-evident packaging for food safety</li>
-                                    <li><i class="fas fa-check"></i> Platform-compliant packaging solutions</li>
-                                    <li><i class="fas fa-check"></i> Dual branded options (restaurant + platform)</li>
-                                    <li><i class="fas fa-check"></i> QR code-enabled packaging for tracking</li>
-                                    <li><i class="fas fa-check"></i> Insulated solutions for long-distance delivery</li>
-                                </ul>
-                            </div>
-                            <div class="use-case-stats">
-                                <h3>Impact</h3>
-                                <div class="stats-grid">
-                                    <div class="stat-item">
-                                        <div class="stat-value">4.5+</div>
-                                        <div class="stat-label">Average Platform Rating</div>
-                                    </div>
-                                    <div class="stat-item">
-                                        <div class="stat-value">65%</div>
-                                        <div class="stat-label">Reduced Complaints</div>
-                                    </div>
-                                    <div class="stat-item">
-                                        <div class="stat-value">45%</div>
-                                        <div class="stat-label">Increased Order Volume</div>
-                                    </div>
+                        </div>
+                        <div class="use-case-body">
+                            <p class="use-case-description">Restaurants partnering with Zomato and Swiggy need specialized packaging solutions that meet platform requirements, enhance delivery experience, and help maintain high ratings in India's competitive food delivery ecosystem.</p>
+                            
+                            <h5>Key Features:</h5>
+                            <ul class="feature-list">
+                                <li>Tamper-evident packaging with security seals</li>
+                                <li>Platform-compliant packaging solutions</li>
+                                <li>Dual branding options (restaurant + platform)</li>
+                                <li>QR code-enabled packaging for tracking and feedback</li>
+                                <li>Insulated solutions for long-distance delivery routes</li>
+                            </ul>
+                            
+                            <h5>Impact:</h5>
+                            <div class="impact-stats">
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">4.5+</span>
+                                    <span class="impact-stat-label">Platform Rating</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">65%</span>
+                                    <span class="impact-stat-label">Fewer Complaints</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">45%</span>
+                                    <span class="impact-stat-label">Order Volume ↑</span>
                                 </div>
                             </div>
+                            
+                            <div class="testimonial">
+                                "Since upgrading our packaging specifically for our Zomato and Swiggy orders, our ratings have improved significantly. The tamper-evident seals provide customers with confidence, and the insulated containers have eliminated cold food complaints."
+                                <span class="testimonial-author">- Ankit G., Restaurant Chain Owner, Delhi NCR</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Takeaway Section -->
-        <section id="takeaway" class="use-case-section">
-            <div class="use-case-card">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="use-case-content">
-                            <h2 class="use-case-title">Takeaway Services</h2>
-                            <div class="use-case-description">
-                                <p>Enhance your takeaway service with efficient and attractive packaging solutions.</p>
-                            </div>
-                            <div class="use-case-features">
-                                <h3>Key Features</h3>
-                                <ul class="feature-list">
-                                    <li><i class="fas fa-check"></i> Easy-to-carry packaging</li>
-                                    <li><i class="fas fa-check"></i> Compartmentalized containers</li>
-                                    <li><i class="fas fa-check"></i> Branded packaging design</li>
-                                    <li><i class="fas fa-check"></i> Reusable options</li>
-                                    <li><i class="fas fa-check"></i> Portion control solutions</li>
-                                </ul>
-                            </div>
-                            <div class="use-case-stats">
-                                <h3>Impact</h3>
-                                <div class="stats-grid">
-                                    <div class="stat-item">
-                                        <div class="stat-value">60%</div>
-                                        <div class="stat-label">Brand Recognition</div>
-                                    </div>
-                                    <div class="stat-item">
-                                        <div class="stat-value">45%</div>
-                                        <div class="stat-label">Customer Satisfaction</div>
-                                    </div>
-                                    <div class="stat-item">
-                                        <div class="stat-value">35%</div>
-                                        <div class="stat-label">Sales Growth</div>
-                                    </div>
+                    
+                    <!-- Events Section -->
+                    <div id="events" class="use-case-card">
+                        <div class="use-case-header">
+                            <h2 class="use-case-title">Events & Parties</h2>
+                        </div>
+                        <div class="use-case-body">
+                            <p class="use-case-description">Indian events from corporate functions to weddings require elegant yet practical disposable solutions that handle high volumes, maintain presentation quality, and account for the diverse food types served at gatherings.</p>
+                            
+                            <h5>Key Features:</h5>
+                            <ul class="feature-list">
+                                <li>Premium finish disposables for upscale events</li>
+                                <li>Traditional-style thali plates for cultural functions</li>
+                                <li>Portion-control containers for buffet settings</li>
+                                <li>Biodegradable options for eco-conscious events</li>
+                                <li>Coordinated packaging sets (plates, cups, cutlery)</li>
+                            </ul>
+                            
+                            <h5>Impact:</h5>
+                            <div class="impact-stats">
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">75%</span>
+                                    <span class="impact-stat-label">Setup Time ↓</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">60%</span>
+                                    <span class="impact-stat-label">Cleanup Time ↓</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">85%</span>
+                                    <span class="impact-stat-label">Client Approval</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="use-case-image">
-                            <img src="images/takeaway-use-case.jpg" alt="Takeaway packaging" class="img-fluid">
-                            <div class="use-case-quote">
-                                <blockquote>
-                                    "Our branded takeaway packaging has become a part of our restaurant's identity."
-                                    <cite>- Restaurant Manager, Delhi</cite>
-                                </blockquote>
+                            
+                            <div class="testimonial">
+                                "For our corporate events, we need packaging that looks professional and handles everything from South Indian to Continental cuisine. Success Marketing's event-specific solutions have been perfect for our diverse catering needs."
+                                <span class="testimonial-author">- Meera P., Corporate Event Planner, Hyderabad</span>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Cloud Kitchen Section -->
-        <section id="cloud-kitchen" class="use-case-section">
-            <div class="use-case-card">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="use-case-image">
-                            <img src="images/cloud-kitchen-use-case.jpg" alt="Cloud kitchen packaging" class="img-fluid">
-                            <div class="use-case-quote">
-                                <blockquote>
-                                    "Efficient packaging has helped us streamline our cloud kitchen operations."
-                                    <cite>- Cloud Kitchen Owner, Bangalore</cite>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="use-case-content">
-                            <h2 class="use-case-title">Cloud Kitchens</h2>
-                            <div class="use-case-description">
-                                <p>Optimize your cloud kitchen operations with efficient packaging solutions.</p>
-                            </div>
-                            <div class="use-case-features">
-                                <h3>Key Features</h3>
-                                <ul class="feature-list">
-                                    <li><i class="fas fa-check"></i> Bulk packaging options</li>
-                                    <li><i class="fas fa-check"></i> Cost-effective solutions</li>
-                                    <li><i class="fas fa-check"></i> Quick assembly packaging</li>
-                                    <li><i class="fas fa-check"></i> Space-efficient storage</li>
-                                    <li><i class="fas fa-check"></i> Easy inventory management</li>
-                                </ul>
-                            </div>
-                            <div class="use-case-stats">
-                                <h3>Impact</h3>
-                                <div class="stats-grid">
-                                    <div class="stat-item">
-                                        <div class="stat-value">50%</div>
-                                        <div class="stat-label">Operational Efficiency</div>
-                                    </div>
-                                    <div class="stat-item">
-                                        <div class="stat-value">40%</div>
-                                        <div class="stat-label">Cost Reduction</div>
-                                    </div>
-                                    <div class="stat-item">
-                                        <div class="stat-value">30%</div>
-                                        <div class="stat-label">Order Processing Time</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Events Section -->
-        <section id="events" class="use-case-section">
-            <div class="use-case-card">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="use-case-content">
-                            <h2 class="use-case-title">Events & Catering</h2>
-                            <div class="use-case-description">
-                                <p>Streamline your event catering with efficient and attractive packaging solutions.</p>
-                            </div>
-                            <div class="use-case-features">
-                                <h3>Key Features</h3>
-                                <ul class="feature-list">
-                                    <li><i class="fas fa-check"></i> Bulk packaging options</li>
-                                    <li><i class="fas fa-check"></i> Temperature control solutions</li>
-                                    <li><i class="fas fa-check"></i> Custom event branding</li>
-                                    <li><i class="fas fa-check"></i> Easy serving solutions</li>
-                                    <li><i class="fas fa-check"></i> Waste management options</li>
-                                </ul>
-                            </div>
-                            <div class="use-case-stats">
-                                <h3>Impact</h3>
-                                <div class="stats-grid">
-                                    <div class="stat-item">
-                                        <div class="stat-value">70%</div>
-                                        <div class="stat-label">Setup Efficiency</div>
-                                    </div>
-                                    <div class="stat-item">
-                                        <div class="stat-value">60%</div>
-                                        <div class="stat-label">Client Satisfaction</div>
-                                    </div>
-                                    <div class="stat-item">
-                                        <div class="stat-value">50%</div>
-                                        <div class="stat-label">Cost Savings</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="use-case-image">
-                            <img src="images/events-use-case.jpg" alt="Event catering packaging" class="img-fluid">
-                            <div class="use-case-quote">
-                                <blockquote>
-                                    "Our event packaging solutions have helped us handle large gatherings efficiently."
-                                    <cite>- Event Caterer, Kolkata</cite>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Office Catering Section -->
-        <section id="office" class="use-case-section">
-            <div class="use-case-card">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="use-case-content">
+                    
+                    <!-- Office Catering Section -->
+                    <div id="office-catering" class="use-case-card">
+                        <div class="use-case-header">
                             <h2 class="use-case-title">Office Catering</h2>
-                            <div class="use-case-description">
-                                <p>Enhance your office catering service with efficient and professional packaging.</p>
-                            </div>
-                            <div class="use-case-features">
-                                <h3>Key Features</h3>
-                                <ul class="feature-list">
-                                    <li><i class="fas fa-check"></i> Professional presentation</li>
-                                    <li><i class="fas fa-check"></i> Easy distribution solutions</li>
-                                    <li><i class="fas fa-check"></i> Temperature maintenance</li>
-                                    <li><i class="fas fa-check"></i> Portion control options</li>
-                                    <li><i class="fas fa-check"></i> Corporate branding</li>
-                                </ul>
-                            </div>
-                            <div class="use-case-stats">
-                                <h3>Impact</h3>
-                                <div class="stats-grid">
-                                    <div class="stat-item">
-                                        <div class="stat-value">65%</div>
-                                        <div class="stat-label">Service Efficiency</div>
-                                    </div>
-                                    <div class="stat-item">
-                                        <div class="stat-value">55%</div>
-                                        <div class="stat-label">Client Retention</div>
-                                    </div>
-                                    <div class="stat-item">
-                                        <div class="stat-value">45%</div>
-                                        <div class="stat-label">Order Volume</div>
-                                    </div>
+                        </div>
+                        <div class="use-case-body">
+                            <p class="use-case-description">Office catering in India's growing corporate sector requires practical, cost-effective packaging that maintains food quality, facilitates easy distribution, and minimizes mess in workplace environments.</p>
+                            
+                            <h5>Key Features:</h5>
+                            <ul class="feature-list">
+                                <li>Individual labeled meal boxes</li>
+                                <li>Desk-friendly container designs</li>
+                                <li>Sealed compartments to prevent spillage</li>
+                                <li>Stackable containers for easy transport</li>
+                                <li>Microwave-safe materials for reheating</li>
+                            </ul>
+                            
+                            <h5>Impact:</h5>
+                            <div class="impact-stats">
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">20%</span>
+                                    <span class="impact-stat-label">Food Waste ↓</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">15min</span>
+                                    <span class="impact-stat-label">Distribution Time</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">90%</span>
+                                    <span class="impact-stat-label">Employee Satisfaction</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="use-case-image">
-                            <img src="images/office-use-case.jpg" alt="Office catering packaging" class="img-fluid">
-                            <div class="use-case-quote">
-                                <blockquote>
-                                    "Our office catering packaging has helped us maintain food quality and presentation."
-                                    <cite>- Catering Manager, Hyderabad</cite>
-                                </blockquote>
+                            
+                            <div class="testimonial">
+                                "Our IT company caters lunch for 200+ employees daily. The individual meal boxes have streamlined our distribution process and virtually eliminated mix-ups with dietary preferences."
+                                <span class="testimonial-author">- Sanjay R., Facilities Manager, Pune</span>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- School Meals Section -->
-        <section id="school" class="use-case-section">
-            <div class="use-case-card">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="use-case-image">
-                            <img src="images/school-use-case.jpg" alt="School meal packaging" class="img-fluid">
-                            <div class="use-case-quote">
-                                <blockquote>
-                                    "Our school meal packaging has helped us ensure food safety and hygiene."
-                                    <cite>- School Caterer, Pune</cite>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="use-case-content">
+                    
+                    <!-- School Meals Section -->
+                    <div id="school-meals" class="use-case-card">
+                        <div class="use-case-header">
                             <h2 class="use-case-title">School Meals</h2>
-                            <div class="use-case-description">
-                                <p>Ensure safe and efficient meal distribution in educational institutions.</p>
-                            </div>
-                            <div class="use-case-features">
-                                <h3>Key Features</h3>
-                                <ul class="feature-list">
-                                    <li><i class="fas fa-check"></i> Child-safe packaging</li>
-                                    <li><i class="fas fa-check"></i> Easy-to-open solutions</li>
-                                    <li><i class="fas fa-check"></i> Portion control options</li>
-                                    <li><i class="fas fa-check"></i> Temperature maintenance</li>
-                                    <li><i class="fas fa-check"></i> Eco-friendly materials</li>
-                                </ul>
-                            </div>
-                            <div class="use-case-stats">
-                                <h3>Impact</h3>
-                                <div class="stats-grid">
-                                    <div class="stat-item">
-                                        <div class="stat-value">80%</div>
-                                        <div class="stat-label">Food Safety</div>
-                                    </div>
-                                    <div class="stat-item">
-                                        <div class="stat-value">70%</div>
-                                        <div class="stat-label">Distribution Efficiency</div>
-                                    </div>
-                                    <div class="stat-item">
-                                        <div class="stat-value">60%</div>
-                                        <div class="stat-label">Parent Satisfaction</div>
-                                    </div>
+                        </div>
+                        <div class="use-case-body">
+                            <p class="use-case-description">Schools and educational institutions in India require safe, practical packaging solutions for canteens, special events, and packed meals that are child-friendly and facilitate efficient meal service.</p>
+                            
+                            <h5>Key Features:</h5>
+                            <ul class="feature-list">
+                                <li>Child-safe container designs</li>
+                                <li>Spill-resistant cups and containers</li>
+                                <li>Portion-controlled meal trays</li>
+                                <li>Lightweight materials for easy handling</li>
+                                <li>Safety-tested food-grade materials</li>
+                            </ul>
+                            
+                            <h5>Impact:</h5>
+                            <div class="impact-stats">
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">30%</span>
+                                    <span class="impact-stat-label">Service Time ↓</span>
                                 </div>
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">25%</span>
+                                    <span class="impact-stat-label">Food Waste ↓</span>
+                                </div>
+                                <div class="impact-stat">
+                                    <span class="impact-stat-value">95%</span>
+                                    <span class="impact-stat-label">Safety Rating</span>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial">
+                                "For our school events and sports days, we needed reliable disposable options that are safe for children and easy to distribute. The portion-controlled meal trays have been particularly useful for our mid-day meal program."
+                                <span class="testimonial-author">- Deepa M., School Administrator, Kolkata</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <!-- CTA Section -->
-        <section class="resource-cta">
-            <div class="container">
-                <h2 class="cta-title">Ready to Optimize Your Food Packaging?</h2>
-                <p class="cta-text">Get expert advice on choosing the right packaging solutions for your specific use case</p>
-                <div class="cta-buttons">
-                    <a href="Contact.html" class="btn btn-primary">Get a Free Consultation</a>
-                    <a href="Products.html" class="btn btn-outline-primary">Explore Our Products</a>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2>Ready to find the perfect solution for your business?</h2>
+                    <p>Contact us today to discuss your specific packaging needs and discover how our products can help your business grow.</p>
+                    <a href="Contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+                    <a href="https://wa.me/919024048484" class="btn btn-success btn-lg"><i class="fab fa-whatsapp mr-1"></i> WhatsApp</a>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
     
-    <!-- Footer placeholder -->
+    <!-- Footer Placeholder -->
     <div id="footer-placeholder"></div>
     
-    <!-- JavaScript Files -->
-    <script src="js/main.js"></script>
+    <!-- Bootstrap and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Common JS -->
     <script src="js/common.js"></script>
 </body>
 </html> 
