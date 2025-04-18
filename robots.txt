@@ -1,0 +1,10 @@
+# robots.txt for Success Marketing
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://successmarketingkota.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 10 
