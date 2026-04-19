@@ -54,6 +54,9 @@
               </div>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="blog/index.html">Blog</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="Contact.html">Contact</a>
             </li>
             <li class="nav-item">
