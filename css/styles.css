@@ -1,5 +1,24 @@
 /* Main Styles for Success Marketing Website */
 
+/* Accessibility: skip-to-content link for keyboard users */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: #0e4d92;
+    color: #fff;
+    padding: 10px 16px;
+    z-index: 10000;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0 0 6px 0;
+}
+.skip-link:focus {
+    left: 0;
+    outline: 3px solid #f39c12;
+    outline-offset: 0;
+}
+
 :root {
     --primary: #0e4d92;
     --secondary: #e74c3c;
