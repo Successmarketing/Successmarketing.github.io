@@ -1,5 +1,235 @@
 var blogPosts = [
   {
+    title: "Pizza Boxes Near Me: Wholesale Pizza Packaging Delivered Across India and Exported Worldwide",
+    excerpt: "Wholesale pizza boxes in 6\" to 16\" sizes, plain kraft and custom-printed, with nationwide India delivery and exports to the USA, Europe, Middle East and Africa.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "pizza-boxes-near-me.html",
+    tags: ["Pizza Boxes Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Burger Boxes Near Me: Wholesale Burger Packaging for QSRs, Cloud Kitchens and Exporters",
+    excerpt: "Wholesale burger clamshells, kraft burger boxes and printed burger packaging available across India and for export to the USA, UK, UAE and GCC.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "burger-boxes-near-me.html",
+    tags: ["Burger Boxes Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Biryani Boxes Near Me: Wholesale Biryani Packaging for Delivery Restaurants, Cloud Kitchens and Caterers",
+    excerpt: "Aluminium biryani containers, printed biryani boxes and biryani buckets in every size, with pan-India dispatch from Kota and exports to the Middle East, UK and USA.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "biryani-boxes-near-me.html",
+    tags: ["Biryani Boxes Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Shawarma Boxes Near Me: Wholesale Shawarma Wraps, Cones and Boxes for QSRs and Food Trucks",
+    excerpt: "Shawarma boxes, foil-lined shawarma paper and cones for QSRs, cloud kitchens and food trucks. Delivered across India and exported to the UAE, Saudi Arabia and GCC.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "shawarma-boxes-near-me.html",
+    tags: ["Shawarma Boxes Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Momos Boxes Near Me: Wholesale Momo Packaging for Cloud Kitchens, QSRs and Street Vendors",
+    excerpt: "Wholesale momo boxes, steamer-safe paper boxes and foil-lined containers for momos, dim sum and dumplings. Ships across India and exported to the USA, UK and Gulf.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "momos-boxes-near-me.html",
+    tags: ["Momos Boxes Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Paper Cups Near Me: Wholesale Paper Cups for Chai, Coffee, Juice and Cold Drinks",
+    excerpt: "Wholesale paper cups in 60 ml to 500 ml sizes for chai, coffee, juice and cold drinks - delivered across India and exported to the USA, UK, UAE and Africa.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "beverage-packaging",
+    categoryLabel: "Beverage Packaging",
+    url: "paper-cups-near-me.html",
+    tags: ["Paper Cups Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Coffee Cups Near Me: Wholesale Hot & Cold Coffee Cups for Cafes, Chains and Kiosks",
+    excerpt: "Wholesale hot coffee cups, cold coffee cups, double-wall and ripple-wall coffee cups with lids - delivered across India and exported worldwide.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "beverage-packaging",
+    categoryLabel: "Beverage Packaging",
+    url: "coffee-cups-near-me.html",
+    tags: ["Coffee Cups Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Tea Cups Near Me: Wholesale Paper Tea Cups and Kulhads for Chai Businesses",
+    excerpt: "Wholesale paper tea cups, cutting-chai cups and kulhads for chai stalls, cafes and tea chains. Pan-India delivery + exports to UK, US, UAE.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "beverage-packaging",
+    categoryLabel: "Beverage Packaging",
+    url: "tea-cups-near-me.html",
+    tags: ["Tea Cups Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Kulhad Cups Near Me: Wholesale Terracotta Clay Cups for Chai, Lassi and Desserts",
+    excerpt: "Wholesale kulhads - traditional terracotta clay cups for chai, lassi, coffee and desserts. Sourced from Rajasthan, shipped across India and exported globally.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "beverage-packaging",
+    categoryLabel: "Beverage Packaging",
+    url: "kulhad-cups-near-me.html",
+    tags: ["Kulhad Cups Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Cake Boxes Near Me: Wholesale Cake Boxes for Bakeries, Home Bakers and Online Brands",
+    excerpt: "Wholesale cake boxes in 0.5 kg, 1 kg, 2 kg and custom sizes, with clear windows, inserts and printed options. Pan-India dispatch + exports worldwide.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "cake-boxes-near-me.html",
+    tags: ["Cake Boxes Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Aluminium Foil Containers Near Me: Wholesale Silver Foil Containers for Food Delivery",
+    excerpt: "Wholesale aluminium foil containers in every standard size (250 ml to 2000 ml), single and multi-compartment, pan-India dispatch and export to USA, UK, UAE.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "containers",
+    categoryLabel: "Containers",
+    url: "aluminium-foil-containers-near-me.html",
+    tags: ["Aluminium Foil Containers Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Ice Cream Cups Near Me: Wholesale Ice Cream and Kulfi Cups for Parlours and Dessert Brands",
+    excerpt: "Wholesale paper and PP ice-cream cups, kulfi matkas, sundae cups and dessert tubs from 60 ml to 500 ml. Pan-India + exports.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "beverage-packaging",
+    categoryLabel: "Beverage Packaging",
+    url: "ice-cream-cups-near-me.html",
+    tags: ["Ice Cream Cups Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Milkshake Cups Near Me: Wholesale Clear PET & Paper Milkshake Cups with Dome Lids",
+    excerpt: "Wholesale milkshake cups, smoothie cups, frappe cups and bubble-tea cups with dome lids and straws. Pan-India + exports to USA, UK, UAE, Australia.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "beverage-packaging",
+    categoryLabel: "Beverage Packaging",
+    url: "milkshake-cups-near-me.html",
+    tags: ["Milkshake Cups Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Thali Containers Near Me: Wholesale 3, 4 and 5 Compartment Meal Trays for Tiffin and Delivery",
+    excerpt: "Wholesale multi-compartment thali meal trays - 3, 4, 5 compartments - in aluminium foil, PP and bagasse. Pan-India dispatch + exports.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "containers",
+    categoryLabel: "Containers",
+    url: "thali-containers-near-me.html",
+    tags: ["Thali Containers Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Eco-Friendly Food Packaging Near Me: Wholesale Bagasse, Areca and Compostable Packaging",
+    excerpt: "Wholesale biodegradable and compostable food packaging - bagasse, areca palm leaf, kraft, PLA and wheat straw - shipped across India and exported globally.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "eco-friendly",
+    categoryLabel: "Eco-Friendly",
+    url: "eco-friendly-food-packaging-near-me.html",
+    tags: ["Eco-Friendly Food Packaging Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Food Packaging Wholesaler Near Me: Pan-India Supplier with Global Export",
+    excerpt: "Full-range food packaging wholesaler since 1991 - cups, containers, boxes, plates, foil, cutlery - delivered across India and exported to USA, Europe, Middle East, Africa",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "industry",
+    categoryLabel: "Industry",
+    url: "food-packaging-wholesaler-near-me.html",
+    tags: ["Food Packaging Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Salad Bowls Near Me: Wholesale Clear PET and Kraft Salad Bowls with Lids",
+    excerpt: "Wholesale clear PET salad bowls, kraft salad bowls and bagasse bowls with dome lids. Pan-India + exports to USA, UK, UAE.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "containers",
+    categoryLabel: "Containers",
+    url: "salad-bowls-near-me.html",
+    tags: ["Salad Bowls Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Kathi Roll Boxes Near Me: Wholesale Paper Wraps, Sleeves and Roll Boxes",
+    excerpt: "Wholesale kathi roll boxes, foil-lined paper wraps and kraft sleeves for Indian roll brands. Pan-India + exports to UAE, UK, US.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "kathi-roll-boxes-near-me.html",
+    tags: ["Kathi Roll Boxes Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Sweet Boxes Near Me: Wholesale Mithai Boxes for Halwais, Sweet Shops and Online Brands",
+    excerpt: "Wholesale sweet / mithai boxes in 250 g to 2 kg sizes, plain kraft and custom-printed, with dividers and window options. Pan-India + export.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "sweet-boxes-near-me.html",
+    tags: ["Sweet Boxes Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Disposable Cutlery Near Me: Wholesale Spoons, Forks, Knives and Wooden Cutlery",
+    excerpt: "Wholesale disposable plastic, CPLA and wooden spoons, forks, knives and stirrers. Pan-India + exports to USA, Europe, UAE, GCC.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "cups-spoons",
+    categoryLabel: "Cups & Spoons",
+    url: "disposable-cutlery-near-me.html",
+    tags: ["Disposable Cutlery Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Juice Cups Near Me: Wholesale Paper and PET Juice Cups for Juice Bars and Health Brands",
+    excerpt: "Wholesale juice cups, cold-press juice bottles and detox juice cups in paper, PET and PLA. Pan-India + exports to USA, UK, UAE.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "beverage-packaging",
+    categoryLabel: "Beverage Packaging",
+    url: "juice-cups-near-me.html",
+    tags: ["Juice Cups Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Noodle Boxes Near Me: Wholesale Chinese Noodle Boxes and Takeaway Pails",
+    excerpt: "Wholesale Chinese noodle boxes, takeaway pails, hakka noodle containers in paper and kraft. Pan-India + exports.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "noodle-boxes-near-me.html",
+    tags: ["Noodle Boxes Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+  {
+    title: "Sandwich Boxes Near Me: Wholesale Sandwich Wedges, Kraft and Window Boxes",
+    excerpt: "Wholesale sandwich wedge packs, kraft sandwich boxes and window boxes for cafes, QSRs and grab-and-go brands. Pan-India + exports.",
+    date: "April 21, 2026",
+    readTime: "12 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "sandwich-boxes-near-me.html",
+    tags: ["Sandwich Boxes Near Me", "Wholesale", "India", "Export", "Food Packaging"]
+  },
+{
     title: "New Year Party Disposable Packaging Guide for Events",
     excerpt: "New Year party disposable packaging guide for restaurants, caterers & event planners. Party plates, cups, cutlery & buffet supplies for NYE celebratio",
     date: "December 10, 2025",
