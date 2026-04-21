@@ -1,5 +1,215 @@
 var blogPosts = [
   {
+    title: "Pizza Boxes in Kota, Rajasthan: Same-Day Wholesale Delivery from Success Marketing",
+    excerpt: "Buy pizza boxes wholesale in Kota, Rajasthan. Plain kraft, white and printed pizza boxes in 6\"-16\", with same-day delivery across Kota and next-day to Bundi, Jhalawar, Baran.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "pizza-boxes-in-kota.html",
+    tags: ["Pizza Boxes in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Burger Boxes in Kota, Rajasthan: Wholesale Burger Packaging for Cafes and QSRs",
+    excerpt: "Wholesale burger boxes in Kota - PP clamshells, bagasse eco clamshells and printed kraft burger boxes. Same-day delivery across Kota, next-day to surrounding Rajasthan.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "burger-boxes-in-kota.html",
+    tags: ["Burger Boxes in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Biryani Boxes in Kota, Rajasthan: Wholesale Aluminium Containers for Biryani and Curry",
+    excerpt: "Wholesale biryani boxes and aluminium foil containers in Kota, Rajasthan - 450 ml to 2000 ml, single and family packs. Same-day Kota delivery + fast Rajasthan dispatch.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "biryani-boxes-in-kota.html",
+    tags: ["Biryani Boxes in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Paper Cups in Kota, Rajasthan: Wholesale Chai, Coffee and Juice Cups",
+    excerpt: "Wholesale paper cups in Kota, Rajasthan - 60 ml cutting chai to 500 ml cold drinks. Same-day delivery in Kota, next-day across Rajasthan.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "beverage-packaging",
+    categoryLabel: "Beverage Packaging",
+    url: "paper-cups-in-kota.html",
+    tags: ["Paper Cups in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Tea Cups Wholesale in Kota, Rajasthan: Paper Chai Cups, Kulhads and Ripple-Wall",
+    excerpt: "Wholesale tea cups in Kota - paper chai cups, kulhads and ripple-wall cups for chai stalls, coaching canteens, hostels and cafes.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "beverage-packaging",
+    categoryLabel: "Beverage Packaging",
+    url: "tea-cups-in-kota.html",
+    tags: ["Tea Cups in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Kulhad Cups in Kota, Rajasthan: Wholesale Terracotta Clay Cups from Rajasthan",
+    excerpt: "Wholesale kulhads in Kota, Rajasthan - terracotta clay cups for chai, lassi, badam milk and kulfi. Sourced locally from Rajasthan clusters, delivered same-day in Kota.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "beverage-packaging",
+    categoryLabel: "Beverage Packaging",
+    url: "kulhad-cups-in-kota.html",
+    tags: ["Kulhad Cups in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Tiffin Containers Wholesale in Kota, Rajasthan: For Hostel Messes and Tiffin Services",
+    excerpt: "Wholesale tiffin containers in Kota - 3 and 5 compartment meal trays, aluminium foil containers and PP thali boxes for hostel messes, tiffin services and coaching canteens.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "containers",
+    categoryLabel: "Containers",
+    url: "tiffin-containers-in-kota.html",
+    tags: ["Tiffin Containers in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Aluminium Foil Containers in Kota, Rajasthan: Wholesale Silver Foil Containers for Food Delivery",
+    excerpt: "Wholesale aluminium foil containers in Kota, Rajasthan - 250 ml to 2000 ml, multi-compartment trays. Same-day delivery in Kota + weekly dispatch to Bundi, Jhalawar, Baran.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "containers",
+    categoryLabel: "Containers",
+    url: "aluminium-foil-containers-in-kota.html",
+    tags: ["Aluminium Foil Containers in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Cake Boxes in Kota, Rajasthan: Wholesale Cake and Pastry Boxes for Bakeries and Home Bakers",
+    excerpt: "Wholesale cake boxes in Kota - 0.5 kg, 1 kg, 2 kg boxes with windows, plus pastry and cupcake boxes. Same-day delivery to bakeries in Gumanpura, Talwandi, Chhavni, Dadabari.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "cake-boxes-in-kota.html",
+    tags: ["Cake Boxes in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Sweet Boxes in Kota, Rajasthan: Wholesale Mithai Boxes for Sweet Shops and Halwais",
+    excerpt: "Wholesale mithai / sweet boxes in Kota, Rajasthan - 250g, 500g, 1kg, 2kg printed and kraft sweet boxes. Same-day delivery to sweet shops in Gumanpura, Nayapura, Civil Lines.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "sweet-boxes-in-kota.html",
+    tags: ["Sweet Boxes in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Ice Cream Cups in Kota, Rajasthan: Wholesale Scoop Cups, Kulfi Matkas and Sundae Bowls",
+    excerpt: "Wholesale ice-cream cups and kulfi matkas in Kota - 60 ml to 500 ml paper cups, PP sundae bowls, terracotta kulfi cups. Same-day Kota delivery.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "beverage-packaging",
+    categoryLabel: "Beverage Packaging",
+    url: "ice-cream-cups-in-kota.html",
+    tags: ["Ice Cream Cups in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Milkshake Cups in Kota, Rajasthan: Wholesale Clear PET Cups with Dome Lids",
+    excerpt: "Wholesale milkshake cups in Kota - clear PET cups with dome lids, jumbo straws. Same-day Kota delivery for shake bars, juice shops and cafes.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "beverage-packaging",
+    categoryLabel: "Beverage Packaging",
+    url: "milkshake-cups-in-kota.html",
+    tags: ["Milkshake Cups in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Chaat Packaging in Kota, Rajasthan: Wholesale Pani Puri Cups, Chaat Bowls and Plates",
+    excerpt: "Wholesale chaat packaging in Kota - pani puri cups, chaat bowls, paper plates for bhel, sev puri, aloo tikki, dahi puri. Same-day delivery to vendors across Kota.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "chaat-packaging-in-kota.html",
+    tags: ["Chaat Packaging in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Kachori and Samosa Packaging in Kota, Rajasthan: Wholesale Grease-Proof Boxes and Paper Bags",
+    excerpt: "Wholesale kachori and samosa packaging in Kota - grease-proof paper bags, kraft boxes, compartment plates for the famous Kota kachori vendors.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "kachori-samosa-packaging-in-kota.html",
+    tags: ["Kachori And Samosa Packaging in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Rajasthani Thali Containers in Kota, Rajasthan: Wholesale Multi-Compartment Meal Trays",
+    excerpt: "Wholesale thali containers in Kota - 3, 4, 5 compartment meal trays in aluminium foil, PP and bagasse. Same-day delivery across Kota.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "containers",
+    categoryLabel: "Containers",
+    url: "thali-containers-in-kota.html",
+    tags: ["Thali Containers in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Disposable Plates in Kota, Rajasthan: Wholesale Paper, Bagasse and Areca Plates",
+    excerpt: "Wholesale disposable plates in Kota - paper, bagasse sugarcane and areca palm-leaf plates in 6\", 7\", 8\", 10\", 12\" and compartment. Same-day Kota delivery.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "plates-bowls",
+    categoryLabel: "Plates & Bowls",
+    url: "disposable-plates-in-kota.html",
+    tags: ["Disposable Plates in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Disposable Cutlery in Kota, Rajasthan: Wholesale Spoons, Forks and Wooden Cutlery",
+    excerpt: "Wholesale disposable cutlery in Kota - PP spoons, CPLA compostable cutlery, wooden spoons and forks. Same-day delivery to caterers and QSRs in Kota.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "cups-spoons",
+    categoryLabel: "Cups & Spoons",
+    url: "disposable-cutlery-in-kota.html",
+    tags: ["Disposable Cutlery in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Chinese Food Packaging in Kota, Rajasthan: Wholesale Noodle Boxes and Manchurian Containers",
+    excerpt: "Wholesale Chinese food packaging in Kota - paper noodle pails, fried-rice boxes, manchurian containers and combo trays. Same-day delivery across Kota.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "chinese-food-packaging-in-kota.html",
+    tags: ["Chinese Food Packaging in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "South Indian Food Packaging in Kota, Rajasthan: Wholesale Dosa, Idli and Sambar Packaging",
+    excerpt: "Wholesale South Indian food packaging in Kota - dosa wrap foil, idli trays, sambar cups, chutney containers. Same-day Kota delivery.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "boxes",
+    categoryLabel: "Boxes",
+    url: "south-indian-food-packaging-in-kota.html",
+    tags: ["South Indian Food Packaging in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Eco-Friendly Food Packaging in Kota, Rajasthan: Wholesale Bagasse, Areca and Compostable Packaging",
+    excerpt: "Wholesale eco-friendly / biodegradable food packaging in Kota - bagasse plates, areca palm-leaf plates, kraft boxes, PLA cups. Same-day Kota delivery.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "eco-friendly",
+    categoryLabel: "Eco-Friendly",
+    url: "eco-friendly-packaging-in-kota.html",
+    tags: ["Eco-Friendly Food Packaging in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+  {
+    title: "Food Packaging Wholesaler in Kota, Rajasthan: Success Marketing - Full-Range Supplier Since 1991",
+    excerpt: "Kota's leading food packaging wholesaler since 1991 - cups, containers, boxes, plates, foil, cutlery. Same-day delivery in Kota + Rajasthan-wide dispatch + global exports.",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    category: "industry",
+    categoryLabel: "Industry",
+    url: "food-packaging-wholesaler-in-kota.html",
+    tags: ["Food Packaging in Kota", "Kota Rajasthan", "Wholesale", "Local", "Same Day Delivery"]
+  },
+{
     title: "Pizza Boxes Near Me: Wholesale Pizza Packaging Delivered Across India and Exported Worldwide",
     excerpt: "Wholesale pizza boxes in 6\" to 16\" sizes, plain kraft and custom-printed, with nationwide India delivery and exports to the USA, Europe, Middle East and Africa.",
     date: "April 21, 2026",

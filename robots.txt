@@ -179,5 +179,6 @@ Allow: /
 # -----------------------------------------------------------------
 Sitemap: https://successmarketingkota.com/sitemap.xml
 Sitemap: https://successmarketingkota.com/sitemap-core.xml
+Sitemap: https://successmarketingkota.com/sitemap-kota.xml
 Sitemap: https://successmarketingkota.com/sitemap-near-me.xml
 Sitemap: https://successmarketingkota.com/sitemap-blog.xml
