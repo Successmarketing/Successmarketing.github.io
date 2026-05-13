@@ -1,0 +1,11 @@
+{
+  "site": "sc-domain:successmarketingkota.com",
+  "sitemapUrl": "https://successmarketingkota.com/sitemap.xml",
+  "sitemapPath": "sitemap-core.xml",
+  "sitemapIndexPaths": [
+    "sitemap-core.xml",
+    "sitemap-kota.xml",
+    "sitemap-near-me.xml",
+    "sitemap-blog.xml"
+  ]
+}

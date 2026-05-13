@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Secrets — never commit
+.secrets/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
