@@ -41,7 +41,8 @@ const SCOPES = [
   "https://www.googleapis.com/auth/indexing",
 ].join(" ");
 
-const INSPECT_PAUSE_MS = 250;     // ~4 RPS, well under 600/min limit
+const INSPECT_PAUSE_MS = 0;       // throttling done via concurrency window
+const INSPECT_CONCURRENCY = 8;    // parallel URL Inspection calls
 const INDEXING_PAUSE_MS = 200;
 const INDEXING_DEFAULT_LIMIT = 200;
 const REPORT_PATH = resolve(process.cwd(), ".secrets/gsc-index-status.json");
@@ -283,69 +284,92 @@ async function main() {
       process.exit(1);
     }
   } else {
-    header(`STEP 3 — Inspect ${entries.length} URLs via URL Inspection API`);
-    const results = [];
+    header(
+      `STEP 3 — Inspect ${entries.length} URLs (concurrency ${INSPECT_CONCURRENCY})`
+    );
+    const results = new Array(entries.length);
     let indexed = 0;
     let nonIndexed = 0;
     let errors = 0;
+    let cursor = 0;
+    let completed = 0;
+    let stop = false;
+    const startedAt = Date.now();
 
-    for (let i = 0; i < entries.length; i++) {
-      const e = entries[i];
-      const r = await inspectUrl(token, SITE, e.loc);
-      if (!r.ok) {
-        errors++;
-        const msg = r.data?.error?.message ?? "";
-        if (r.status === 429 || /quota/i.test(msg)) {
-          console.error(
-            `  ! quota exceeded after ${i} URL(s): ${msg} — stopping inspection`
-          );
-          break;
+    async function worker() {
+      while (!stop) {
+        const i = cursor++;
+        if (i >= entries.length) return;
+        const e = entries[i];
+        const r = await inspectUrl(token, SITE, e.loc);
+        if (!r.ok) {
+          errors++;
+          const msg = r.data?.error?.message ?? "";
+          if (r.status === 429 || /quota/i.test(msg)) {
+            console.error(
+              `  ! quota exceeded after ${completed} URL(s): ${msg} — stopping`
+            );
+            stop = true;
+            results[i] = {
+              url: e.loc,
+              lastmod: e.lastmod,
+              source: e.source,
+              error: `${r.status} ${msg}`,
+            };
+            return;
+          }
+          results[i] = {
+            url: e.loc,
+            lastmod: e.lastmod,
+            source: e.source,
+            error: `${r.status} ${msg}`,
+          };
+        } else {
+          const cls = classify(r.data);
+          results[i] = {
+            url: e.loc,
+            lastmod: e.lastmod,
+            source: e.source,
+            ...cls,
+          };
+          if (cls.isIndexed) indexed++;
+          else nonIndexed++;
         }
-        results.push({
-          url: e.loc,
-          lastmod: e.lastmod,
-          source: e.source,
-          error: `${r.status} ${msg}`,
-        });
-        if (i % 25 === 0)
+        completed++;
+        if (completed % 25 === 0 || completed === entries.length) {
+          const sec = ((Date.now() - startedAt) / 1000).toFixed(0);
+          const rate = (completed / Math.max(1, sec)).toFixed(2);
           console.log(
-            `  [${i + 1}/${entries.length}] ERR ${r.status} ${e.loc}`
+            `  [${completed}/${entries.length}] ${sec}s elapsed @ ${rate} URL/s — ✓${indexed} ✗${nonIndexed} err${errors}`
           );
-      } else {
-        const cls = classify(r.data);
-        results.push({
-          url: e.loc,
-          lastmod: e.lastmod,
-          source: e.source,
-          ...cls,
-        });
-        if (cls.isIndexed) indexed++;
-        else nonIndexed++;
-        if (i % 25 === 0 || i === entries.length - 1) {
-          console.log(
-            `  [${i + 1}/${entries.length}] ${
-              cls.isIndexed ? "✓" : "✗"
-            } ${cls.coverageState || cls.verdict} — ${e.loc}`
-          );
+        }
+        if (INSPECT_PAUSE_MS) {
+          await new Promise((r) => setTimeout(r, INSPECT_PAUSE_MS));
         }
       }
-      await new Promise((r) => setTimeout(r, INSPECT_PAUSE_MS));
     }
+
+    await Promise.all(
+      Array.from({ length: INSPECT_CONCURRENCY }, () => worker())
+    );
+
+    // Compact array (skip undefined holes from early termination).
+    const compact = results.filter((x) => x !== undefined);
 
     report = {
       site: SITE,
       generatedAt: new Date().toISOString(),
       totals: {
-        examined: results.length,
+        examined: compact.length,
         indexed,
         nonIndexed,
         errors,
       },
-      results,
+      results: compact,
     };
     saveReport(report);
     console.log(
-      `\nInspection summary — examined ${results.length} | indexed ${indexed} | non-indexed ${nonIndexed} | errors ${errors}`
+      `\nInspection summary — examined ${compact.length} | indexed ${indexed} | non-indexed ${nonIndexed} | errors ${errors}`
     );
   }
 
